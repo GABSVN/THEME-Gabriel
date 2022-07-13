@@ -28,9 +28,9 @@
 Thème Gabriel
 </h2> 
 
-Le projet CPT est un outils qui fournit des fonctionnalités étendues aux types de publication personnalisées et aux taxonomies WordPress. Il permet aux développeurs de créer rapidement des types de publication et des taxonomies sans devoir écrire le même code encore et encore.
+Le projet THÈME Gabriel est un thème polyvalent qui fournit des fonctionnalités aux types de publication personnalisées et aux taxonomies WordPress. Il permet aux développeurs de créer rapidement des types de publication et des taxonomies.
 
-Les CPT étendus fonctionnent à la fois avec l'éditeur classique et l'éditeur de blocs.
+Ce thème fonctionne à la fois avec l'éditeur classique et l'éditeur de blocs.
 
 <h2 align="center">
 Paramètres par défaut améliorés pour les types de publication
