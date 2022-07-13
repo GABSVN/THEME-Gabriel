@@ -41,7 +41,7 @@ Si vous n'avez pas installé Docker et Docker Compose, suivez les étapes décri
 Avec Docker installé et en cours d'exécution, dans Terminal :
 
 ```php
-		git clone https://github.com/GABSVN/THEME-Gabriel.git
+		git clone https://github.com/GABSVN/docker-compose.yml
 		cd docker-wordpress-theme-setup		
 ```
 
@@ -50,18 +50,8 @@ Avec Docker installé et en cours d'exécution, dans Terminal :
 ```
 
 ```php
-		http://localhost:../
+		http://localhost:8080/
 ```
-
-
-Boum, maintenant nous avons:
-
-* Un type de publication "Stories", avec des étiquettes correctement générées et des messages mis à jour, trois colonnes personnalisées dans la zone d'administration (dont deux peuvent être triées), des histoires ajoutées au flux RSS principal et toutes les histoires affichées sur l'archive de type de publication.
-* Une taxonomie 'Genre' attachée au type de publication 'Stories', avec des étiquettes correctement générées et des messages de mise à jour des termes, et une colonne personnalisée dans la zone d'administration.
-
-Les fonctions `register_extended_post_type()` et `register_extended_taxonomy()` fsont finalement des enveloppes pour les fonctions `register_post_type()` et `register_taxonomy()` dans le noyau de WordPress, de sorte que n'importe lequel des paramètres de ces fonctions peut être utilisé.
-
-Bien entendu, vous pouvez faire beaucoup plus.
 
 ## Contribuez et testez! ##
 
