@@ -4,7 +4,7 @@
 <!------------------------------------------------------- -->
 
 <p align="center">
-  <a href="https://www.gabsvn.ch/" target="_blank" rel="noreferrer"><img src="![GabrielTheme-A-Logo](https://user-images.githubusercontent.com/99598124/178706832-2b852a84-ada7-4796-a319-3143bfde5652.gif)" alt="my banner"></a>
+  <a href="https://www.gabsvn.ch/" target="_blank" rel="noreferrer"><img src="![GabrielTheme-A-Logo](https://user-images.githubusercontent.com/99598124/178707439-7b9dfaa0-adbe-4eb8-a869-d3b108c14ce1.gif)" alt="my banner"></a>
 </p>
 
 <!-- --------------------------------------------------- -->
