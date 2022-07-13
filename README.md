@@ -54,7 +54,7 @@ Avec Docker installé et en cours d'exécution, dans Terminal :
 
 ## Contribuez et testez! ##
 
-Veuillez contribuer et tester.
+Faites-vous plaisir, veuillez contribuer et tester.
 
 ## License: GPLv2 ou ultérieure ##
 
