@@ -1,10 +1,18 @@
+<!-- -------awesome badge-------------------------------------- -->
+
+<div align="center">
+  <br /><br />
+  <a href="https://gabsvn.ch"><img src="https://awesome.re/badge-flat.svg" /></a>
+  <br /><br /><br />
+</div>
+<!------------------------------------------------------- -->
 
 
 <!-- BANNIERE Wordpress CPT Project -->
 <!------------------------------------------------------- -->
 
 <p align="center">
-  <a href="https://www.gabsvn.ch/" target="_blank" rel="noreferrer"><img src="![GabrielTheme-A-Logo](https://user-images.githubusercontent.com/99598124/178707439-7b9dfaa0-adbe-4eb8-a869-d3b108c14ce1.gif)" alt="my banner"></a>
+  <a href="https://www.gabsvn.ch/" target="_blank" rel="noreferrer"><img src="https://user-images.githubusercontent.com/99598124/178707439-7b9dfaa0-adbe-4eb8-a869-d3b108c14ce1.gif" alt="my banner"></a>
 </p>
 
 <!-- --------------------------------------------------- -->
