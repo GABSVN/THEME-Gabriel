@@ -23,7 +23,7 @@
 ![](https://img.shields.io/badge/Code-Php-informational?style=flat&logo=Php&color=336791)
 <!------------------------------------------------------- -->
 
-
+https://github.com/GABSVN/THEME-Gabriel.git
 <h2 align="center">
 Thème Gabriel
 </h2> 
@@ -41,7 +41,7 @@ Si vous n'avez pas installé Docker et Docker Compose, suivez les étapes décri
 Avec Docker installé et en cours d'exécution, dans Terminal :
 
 ```php
-		git clone 
+		git clone https://github.com/GABSVN/THEME-Gabriel.git
 		cd docker-wordpress-theme-setup		
 ```
 
