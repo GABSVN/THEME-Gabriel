@@ -23,7 +23,6 @@
 ![](https://img.shields.io/badge/Code-Php-informational?style=flat&logo=Php&color=336791)
 <!------------------------------------------------------- -->
 
-https://github.com/GABSVN/THEME-Gabriel.git
 <h2 align="center">
 Thème Gabriel
 </h2> 
