@@ -4,19 +4,15 @@
 <!------------------------------------------------------- -->
 
 <p align="center">
-  <a href="https://www.gabsvn.ch/" target="_blank" rel="noreferrer"><img src="![GabrielTheme-A-Logo](https://user-images.githubusercontent.com/99598124/178697943-21a04994-a4d6-4fde-8562-47c4ffca5650.gif)" alt="my banner"></a>
+  <a href="https://www.gabsvn.ch/" target="_blank" rel="noreferrer"><img src="![GabrielTheme-A-Logo](https://user-images.githubusercontent.com/99598124/178706832-2b852a84-ada7-4796-a319-3143bfde5652.gif)" alt="my banner"></a>
 </p>
 
 <!-- --------------------------------------------------- -->
 
 <!-- -------Badges Wordpress et PHP license 7 - 8 -------------------------------------- -->
 
-<div align="center">
-  <br /><br />
 ![](https://img.shields.io/badge/Cms-Wordpress-informational?style=flat&logo=Wordpress&color=336791)
-[![PHP 7 and 8](https://img.shields.io/badge/php-7%20/%208-blue.svg?style=flat-square)](https://wordpress.org/support/update-php/)
-  <br /><br /><br />
-</div>
+![](https://img.shields.io/badge/Code-Php-informational?style=flat&logo=Php&color=336791)
 <!------------------------------------------------------- -->
 
 
