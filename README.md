@@ -33,149 +33,26 @@ Le projet THÈME Gabriel est un thème polyvalent qui fournit des fonctionnalit�
 Ce thème fonctionne à la fois avec l'éditeur classique et l'éditeur de blocs.
 
 <h2 align="center">
-Paramètres par défaut améliorés pour les types de publication
+Installation
 </h2> 
 
-## Fonctionnalités d'administration ##
+Si vous n'avez pas installé Docker et Docker Compose, suivez les étapes décrites dans le billet de blog lié ci-dessus.
 
- * Types de publication et taxonomies automatiquement ajoutés à la section "En bref" du tableau de bord
- * Création déclarative des colonnes du tableau sur l'écran de listage des types de publication :
-   * Colonnes pour la méta post, les termes de taxonomie, les images en vedette, les champs de publication, les connexions Posts 2 Posts et les fonctions personnalisées
-   * Colonnes triables pour les méta-postes, les termes de taxonomie et les champs de publication
-   * Restrictions de capacité utilisateur
-   * Colonne de tri et ordre de tri par défaut
- * Plusieurs méta-boîtes personnalisées disponibles pour les taxonomies sur l'écran de post-édition :
-   * Liste simplifiée des cases à cocher
-   * Boutons radio
-   * Menu déroulant
-   * Fonction personnalisée  
- * Types de publication éventuellement ajoutés à la section "Récemment publié" sur le tableau de bord
- * Création déclarative de colonnes de tableau sur l'écran de listage des termes de taxonomie :
-   * Colonnes pour les méta-termes et les fonctions personnalisées
-   * Restrictions de capacité utilisateur
- * Contrôles de filtrage sur l'écran de liste des types de publication pour activer le filtrage des publications par méta de publication, termes de taxonomie, auteur de publication et dates de publication
- * Remplacer le texte "Image en vedette" et "Entrez le titre ici"
- 
- 
-
-## Fonctionnalités front-End pour les types de publication ##
-
- * Remplacer les variables de requête publiques ou privées par défaut telles que `posts_per_page`, `orderby`, `orderetnopaging`
- * Ajouter le type de publication au flux RSS principal du site
-  * Spécifiez les variables de requête publiques qui activent le filtrage par méta post et dates de publication
- * Spécifiez une structure de permaliens personnalisée :
-   * Par exemple `reviews/%year%/%month%/%review%`
-   * Prend en charge toutes les balises de réécriture pertinentes, y compris les dates et les taxonomies personnalisées
-   * Intégration automatique avec le plugin Rewrite Rule Testing
- * Spécifiez les variables de requête publiques qui permettent le tri par post-méta, termes de taxonomie et champs de publication
-
-## Exigences minimales ##
-
-* **PHP:** 7.4  
-  - PHP 8.0 et 8.1 sont pris en charge
-* **WordPress:** 5.6  
-  - Testé jusqu'à WP 6.0
-
-Les CPT étendus devraient fonctionner avec les versions de WordPress jusqu'à 4.9, mais ces versions ne sont pas testées et ne sont pas officiellement prises en charge.
-
-## Installation ##
-
-Extended CPTs est un plugin, ce qui signifie que vous pouvez l'inclure dans votre projet. Installez-le à l'aide de Composer :
-
-```bash
-Docker compose
-```
-
-Les moyens d'installation ou d'utilisation, ne sont pas officiellement pris en charge et se font à vos risques et périls.
-
-## Usage ##
-
-Besoin d'un type de message simple sans fioritures? Vous pouvez enregistrer un type de publication avec un seul paramètre :
+Avec Docker installé et en cours d'exécution, dans Terminal :
 
 ```php
-add_action( 'init', function() {
-	register_extended_post_type( 'article' );
-} );
+		git clone 
+		cd docker-wordpress-theme-setup		
 ```
-
-Et vous pouvez enregistrer une taxonomie avec seulement deux paramètres :
 
 ```php
-add_action( 'init', function() {
-	register_extended_taxonomy( 'location', 'article' );
-} );
+		docker-compose up -d
 ```
-
-Essayez-le. Vous aurez un type de publication public hiérarchique avec une interface utilisateur d'administration, une taxonomie publique hiérarchique avec une interface utilisateur d'administration, et toutes les étiquettes et les messages mis à jour pour eux seront automatiquement générés.
-
-Ou pour un peu plus de fonctionnalité :
 
 ```php
-add_action( 'init', function() {
-	register_extended_post_type( 'story', [
-
-		# Add the post type to the site's main RSS feed:
-		'show_in_feed' => true,
-
-		# Show all posts on the post type archive:
-		'archive' => [
-			'nopaging' => true,
-		],
-
-		# Add some custom columns to the admin screen:
-		'admin_cols' => [
-			'story_featured_image' => [
-				'title'          => 'Illustration',
-				'featured_image' => 'thumbnail'
-			],
-			'story_published' => [
-				'title_icon'  => 'dashicons-calendar-alt',
-				'meta_key'    => 'published_date',
-				'date_format' => 'd/m/Y'
-			],
-			'story_genre' => [
-				'taxonomy' => 'genre'
-			],
-		],
-
-		# Add some dropdown filters to the admin screen:
-		'admin_filters' => [
-			'story_genre' => [
-				'taxonomy' => 'genre'
-			],
-			'story_rating' => [
-				'meta_key' => 'star_rating',
-			],
-		],
-
-	], [
-
-		# Override the base names used for labels:
-		'singular' => 'Story',
-		'plural'   => 'Stories',
-		'slug'     => 'stories',
-
-	] );
-
-	register_extended_taxonomy( 'genre', 'story', [
-
-		# Use radio buttons in the meta box for this taxonomy on the post editing screen:
-		'meta_box' => 'radio',
-
-		# Add a custom column to the admin screen:
-		'admin_cols' => [
-			'updated' => [
-				'title_cb'    => function() {
-					return '<em>Last</em> Updated';
-				},
-				'meta_key'    => 'updated_date',
-				'date_format' => 'd/m/Y'
-			],
-		],
-
-	] );
-} );
+		http://localhost:../
 ```
+
 
 Boum, maintenant nous avons:
 
